@@ -4,7 +4,7 @@
   <title>Vamshi Krishna Pets Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
@@ -13,6 +13,19 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">Pet Options</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="basic.html">Basic</a></li>
+            <li class="nav-item"><a class="nav-link" href="advanced.html">Advanced</a></li>
+        </ul>
+    </div>
+  </nav>
+
      <h1>Pick a pet by VamshiKrishna</h1>
      B - Beagle 
      A - Angelfish 
@@ -21,25 +34,26 @@
      P - Parrot 
      A - Akita 
      
-     <div class="container"><div class="row">
+    <div class="container">
+      <div class="row">
          <div class="col-sm-2">B</div>
          <div class="col-sm-2">A</div>
          <div class="col-sm-2">L</div>
          <div class="col-sm-2">U</div>
          <div class="col-sm-2">P</div>
          <div class="col-sm-2">A</div>
-        </div>
-        <div class="row">
-        <div class="col-md">Beagle</div>
+      </div>
+      <div class="row">
+         <div class="col-md">Beagle</div>
          <div class="col-md">Angelfish</div>
          <div class="col-md">Labrador </div>
          <div class="col-md">Umbrella Cockatoo</div>
          <div class="col-md">Parrot</div>
          <div class="col-md">Akita</div>
-        </div>
-     </div>
+      </div>
+    </div>
 
-     <p> When we are the reducing the page size the BALUPA row is breaking at the frist. It means the letters are breaking at the frist</p>
+     <p> When we are reducing the page size the BALUPA row is breaking at the frist. It means the letters are breaking at the frist</p>
      
     
     <h3 class="container 2">Three of the Pets Images are below </h3>
@@ -49,17 +63,14 @@
     <div class="col-md"><img src="cockatoo.jpg " width="400" height="500" class="img-fluid" alt="cockatoo"></div>
     </div>
 
-
     <h3 class="container 2">Three of the Pets Images are below </h3>
     <div class="row"> 
     <div class="col-sm-2"><img src="download1.jpg" width="200" height="200" class="img-thumbnail" alt="Beagle"></div>
     <div class="col-sm-2"><img src="download.jpg"  width="200" height="200" class="img-thumbnail" alt="Labrador"></div> 
     <div class="col-sm-2"><img src="cockatoo.jpg" width="200"  height="200"  class="img-thumbnail" alt="img-fluid"></div>
     </div>
-    
-    
-    
-      <table class="table table-bordered table-dark table-striped ">
+
+    <table class="table table-bordered table-dark table-striped ">
       <thead align="center">
         <tr class="table-secondary table">
           <th cscope="col">Letter</th>
@@ -107,7 +118,83 @@
         </tr>
       </tbody>
     </table>
-  
+    
 
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+      <button type="button" class="btn btn-success">B</button>
+      <button type="button" class="btn btn-success">L</button>
+      <button type="button" class="btn btn-success">U</button>
+    </div>
+    <div>
+      <button type="button" class="btn btn-warning">A</button>
+      <button type="button" class="btn btn-warning">P</button>
+    </div>
+    <div>
+      <button type="button" class="btn btn-danger">A</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">Options</button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="basic.html">Basic</a>
+        <a class="dropdown-item" href="advanced.html">Advanced</a>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="form-group">
+    <label for="pet">Pet</label>
+    <input type="text" class="form-control" id="pet" placeholder="Enter your pet">
+</div>
+<div class="form-check">
+  <input type="checkbox" class="form-check-input" id="newsletter">
+  <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<br>
+<br>
+<br>
+
+  <div class="card-group">
+    <div class="card">
+        <img src="download.jpg" class="card-img-top" alt="Labrador">
+        <div class="card-body">
+            <h5 class="card-title">Beagle</h5>
+            <p class="card-text">A friendly and loyal dog breed.</p>
+            <a href="https://en.wikipedia.org/wiki/Labrador_Retriever" class="btn btn-primary">More Info</a>
+        </div>
+    </div>
+    <div class="card" style="width:200">
+      <img src="download1.jpg" class="card-img-top" alt="Beagle">
+      <div class="card-body">
+        <h5 class="card-title"> Labrador</h5>
+        <p class="card-text">This is the image of the beagle</p>
+        <a href="https://en.wikipedia.org/wiki/beagle" class="btn btn-primary">More Info</a>
+      </div>      
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="cockatoo.jpg" class="card-img-top" alt="Beagle">
+        <div class="card-body">
+          <h5 class="card-title"> Cockatoo</h5>
+          <p class="card-text">This is the image of the Cockatoo</p>
+          <a href="https://en.wikipedia.org/wiki/cockatoo" class="btn btn-primary">More Info</a>
+        </div>
+</div>
+<br>
+     
 </body>
 </html>
